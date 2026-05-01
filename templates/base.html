@@ -5,17 +5,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Portofolio profesional Adit Setya Nugroho, seorang Blue Team Security Engineer yang berfokus pada IDPS Snort 3, monitoring SSH Brute Force, dan keamanan jaringan."
+    />
+    <meta
+      name="keywords"
+      content="Adit Setya Nugroho, Aaditan, Cybersecurity, Blue Team, Security Engineer, IDPS Snort 3, Network Security, Splunk"
+    />
+    <meta name="author" content="Adit Setya Nugroho" />
+
     <meta
       name="google-site-verification"
       content="rNfl0yyPFwnXi3-PAxupWv9dQAuH0Vry5bHPPqzUJiM"
     />
 
-    <title>Cybersecurity Solutions | Aaditan</title>
+    <!-- Title diubah menjadi Nama Lengkap agar muncul di Google -->
+    <title>Adit Setya Nugroho | Blue Team Security Engineer</title>
 
     <link rel="icon" type="image/png" href="{% static 'images/logo.png' %}" />
-
     <link rel="stylesheet" href="{% static 'css/style.css' %}?v=6" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -28,9 +38,10 @@
         <a href="{% url 'home' %}" class="nav-logo">
           <img
             src="{% static 'images/logo.png' %}"
-            alt="Logo"
+            alt="Logo Adit Setya Nugroho"
             style="height: 35px; width: auto; margin-right: 10px"
           />
+          <!-- Tetap gunakan Aaditan jika ingin branding, tapi pastikan teks h1 di home.html berisi nama lengkap -->
           Aaditan
         </a>
 
@@ -46,11 +57,15 @@
     {% block content %}{% endblock %}
 
     <footer>
-      <p>&copy; 2026 Aaditan. Built with Django, Python & Caffeine.</p>
+      <!-- Menambahkan Nama Lengkap di Footer membantu penguatan kata kunci di seluruh halaman -->
+      <p>
+        &copy; 2026 Adit Setya Nugroho (Aaditan). Built with Django, Python &
+        Caffeine.
+      </p>
     </footer>
 
     {% block floating_ui %}
-
+    <!-- (Bagian floating_ui tetap sama) -->
     <div class="lang-switch-container">
       <button id="langToggle" class="btn-lang" onclick="toggleLanguage()">
         <span class="active">ID</span>
@@ -92,29 +107,8 @@
         ></a>
       </div>
     </div>
-
-    <div id="cookieBanner" class="cookie-banner">
-      <div class="cookie-content">
-        <i class="fas fa-shield-alt cookie-icon"></i>
-        <div class="cookie-text">
-          <h4>Security Protocol</h4>
-          <p>
-            This system uses cookies to ensure
-            <strong>session integrity</strong> and optimize user experience.
-          </p>
-        </div>
-      </div>
-      <div class="cookie-actions">
-        <button class="btn-cookie-outline" onclick="closeCookie()">
-          Decline
-        </button>
-        <button class="btn-cookie-solid" onclick="acceptCookie()">
-          Authorize
-        </button>
-      </div>
-    </div>
-
     {% endblock %}
+
     <script src="{% static 'js/script.js' %}?v=6"></script>
   </body>
 </html>
