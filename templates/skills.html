@@ -1,199 +1,71 @@
-{% extends 'base.html' %} {% load static %} {% block content %}
-<main>
-  <!-- SECTION 1: HERO - IDENTITAS PROFESIONAL -->
-  <section class="fullpage section-hero" id="home">
-    <div class="fullpage-inner hero">
-      <div class="hero-text anim-drop">
-        <h1>Hi, I'm <span class="hero-highlight">Adit Setya Nugroho</span></h1>
-        <p class="hero-description">
-          Final-year <strong>Cybersecurity Engineering</strong> student
-          transitioning into a
-          <strong>Technical Consultant Analyst (Blue Team)</strong> role.
-          Expertise in network defense,
-          <strong>SIEM (Splunk)</strong> monitoring, and
-          <strong>Snort 3 IDPS</strong> optimization.
-        </p>
+<section id="skills" class="fullpage section-dark">
+  <div class="fullpage-inner">
+    <!-- Header yang lebih bersih dan profesional -->
+    <div class="section-header">
+      <span class="sub-heading">CORE COMPETENCIES</span>
+      <h2>Technical <span class="highlight-text">Portfolio</span></h2>
+      <p class="header-desc">
+        Pemetaan keahlian dalam operasional keamanan defensif, pemantauan
+        jaringan, dan riset keamanan siber.
+      </p>
+    </div>
+
+    <!-- Grid yang lebih stabil dan rapi -->
+    <div class="competency-grid">
+      <!-- Card 1: Fokus Utama (Defensive Operations) -->
+      <div class="competency-card">
+        <div class="card-top">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Defensive Operations</h3>
+        </div>
+        <div class="card-content">
+          <p class="role-subtitle">SIEM & Threat Analysis</p>
+          <ul class="skill-list">
+            <li><strong>Monitoring:</strong> Splunk, Wazuh SIEM</li>
+            <li><strong>IDPS:</strong> Snort 3, Threshold Optimization</li>
+            <li><strong>Traffic:</strong> NDR & Pattern Analysis</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="hero-visual anim-up">
-        <div class="terminal-window">
-          <div class="terminal-header">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
-          </div>
-          <div class="terminal-body">
-            <p>
-              <span class="prompt">adit@metrodata:~$</span> ./check_status.sh
-            </p>
-            <p class="output">Checking Blue Team Readiness...</p>
-            <p class="output">[OK] Splunk SIEM Monitoring</p>
-            <p class="output">[OK] Snort 3 IDPS Tuning</p>
-            <p class="output">[OK] Linux Server Hardening</p>
-            <p class="output">
-              Current Status: <span class="blink">Monitoring_Threats</span>
-            </p>
-          </div>
+      <!-- Card 2: Infrastruktur & Hardening -->
+      <div class="competency-card">
+        <div class="card-top">
+          <i class="fas fa-server"></i>
+          <h3>Infrastructure Security</h3>
+        </div>
+        <div class="card-content">
+          <p class="role-subtitle">Hardening & Perimeter</p>
+          <ul class="skill-list">
+            <li>
+              <strong>System:</strong> Linux Server Hardening (RHEL/Ubuntu)
+            </li>
+            <li>
+              <strong>Network:</strong> Linux NGFW, Squid Proxy, SSL
+              Interception
+            </li>
+            <li><strong>Env:</strong> Proxmox, VMware, Docker</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Card 3: Research & GRC -->
+      <div class="competency-card">
+        <div class="card-top">
+          <i class="fas fa-file-invoice"></i>
+          <h3>Engineering & GRC</h3>
+        </div>
+        <div class="card-content">
+          <p class="role-subtitle">R&D and Governance</p>
+          <ul class="skill-list">
+            <li><strong>R&D:</strong> 7-Step Research Analysis Methodology</li>
+            <li>
+              <strong>Automation:</strong> Python & Bash for Security Tools
+            </li>
+            <li><strong>Standards:</strong> ISO 27001, NIST CSF Foundation</li>
+          </ul>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- SECTION 2: CAREER LOGS - PT FPT METRODATA INDONESIA -->
-  <section class="fullpage" id="about">
-    <div class="fullpage-inner">
-      <div class="siem-dashboard">
-        <div class="siem-topbar">
-          <div class="siem-brand">
-            <i class="fas fa-shield-alt"></i> SECURITY_LOGS
-          </div>
-          <div class="siem-meta">
-            <span class="status-live">● ROLE: BLUE_TEAM_ENGINEER</span>
-          </div>
-        </div>
-        <div class="siem-viewport">
-          <table class="log-table">
-            <thead>
-              <tr>
-                <th width="20%">TIMESTAMP</th>
-                <th width="15%">SOURCE</th>
-                <th>EVENT / ACHIEVEMENT</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="time">2026-03-30</td>
-                <td class="src">Metrodata</td>
-                <td class="msg">
-                  Onboarding: <strong>Technical Consultant Analyst</strong> at
-                  PT FPT Metrodata Indonesia.
-                </td>
-              </tr>
-              <tr class="highlight-row">
-                <td class="time">2026-05-01</td>
-                <td class="src">Research</td>
-                <td class="msg">
-                  Thesis: <strong>SSH Brute Force Analysis</strong> using Snort
-                  3 Thresholding.
-                </td>
-              </tr>
-              <tr class="last-row">
-                <td class="time">Present</td>
-                <td class="src">System</td>
-                <td class="msg">
-                  Developing <strong>Splunk Dashboards</strong> for real-time
-                  threat visualization.
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 3: TECHNICAL ARSENAL - REVISI TOTAL -->
-  <section id="skills" class="fullpage glass-bg">
-    <div class="fullpage-inner">
-      <div class="tech-header anim-drop">
-        <span class="badge-pro">DEFENSE CAPABILITIES</span>
-        <h2>Technical Arsenal</h2>
-        <p>
-          Spesialisasi dalam infrastruktur keamanan defensif dan analisis
-          ancaman.
-        </p>
-      </div>
-
-      <div class="tech-grid">
-        <!-- Defensive Operations -->
-        <div class="tech-card anim-up delay-1">
-          <div class="scan-line"></div>
-          <div class="card-header">
-            <div class="icon-frame"><i class="fas fa-shield-virus"></i></div>
-            <div class="header-text">
-              <h3>Defensive Ops</h3>
-              <span>SIEM & Monitoring</span>
-            </div>
-          </div>
-          <div class="card-body">
-            <ul>
-              <li><strong>SIEM:</strong> Splunk Dashboarding, Wazuh Alerts</li>
-              <li><strong>IDPS:</strong> Snort 3 (Inline Mode), Suricata</li>
-              <li>
-                <strong>Analysis:</strong> Threshold Tuning, Traffic Pattern
-                Analysis
-              </li>
-            </ul>
-          </div>
-          <div class="card-footer">
-            <i class="fas fa-project-diagram" title="Splunk"></i>
-            <i class="fas fa-user-shield" title="Blue Team"></i>
-          </div>
-        </div>
-
-        <!-- Infrastructure Hardening -->
-        <div class="tech-card anim-up delay-2">
-          <div class="scan-line"></div>
-          <div class="card-header">
-            <div class="icon-frame"><i class="fas fa-server"></i></div>
-            <div class="header-text">
-              <h3>Infrastructure</h3>
-              <span>Hardening & Network</span>
-            </div>
-          </div>
-          <div class="card-body">
-            <ul>
-              <li>
-                <strong>Network:</strong> Linux NGFW, Squid Proxy, SSL
-                Interception
-              </li>
-              <li>
-                <strong>Hardening:</strong> SSH Protocol Tuning, Linux Admin
-                (RHEL)
-              </li>
-              <li>
-                <strong>Virtualization:</strong> Proxmox, VMware, Docker
-                Containers
-              </li>
-            </ul>
-          </div>
-          <div class="card-footer">
-            <i class="fab fa-linux"></i>
-            <i class="fab fa-docker"></i>
-          </div>
-        </div>
-
-        <!-- Engineering & GRC -->
-        <div class="tech-card anim-up delay-3">
-          <div class="scan-line"></div>
-          <div class="card-header">
-            <div class="icon-frame"><i class="fas fa-file-invoice"></i></div>
-            <div class="header-text">
-              <h3>Engineering</h3>
-              <span>Analysis & GRC</span>
-            </div>
-          </div>
-          <div class="card-body">
-            <ul>
-              <li>
-                <strong>Automation:</strong> Python & Bash for Security Scripts
-              </li>
-              <li>
-                <strong>Methodology:</strong> 7-Step Research Analysis Process
-              </li>
-              <li>
-                <strong>GRC:</strong> ISO 27001, NIST CSF, Internal Audit
-                Mapping
-              </li>
-            </ul>
-          </div>
-          <div class="card-footer">
-            <i class="fab fa-python"></i>
-            <i class="fas fa-balance-scale"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-{% endblock %}
+  </div>
+</section>
