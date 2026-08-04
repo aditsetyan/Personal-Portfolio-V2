@@ -1,173 +1,20 @@
-<!doctype html>
-<html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Skills</title>
+{% extends 'base.html' %}
+{% load static %}
 
-    <!-- Link Font Awesome untuk Ikon -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+{% block content %}
+<main>
+    <section id="skills" class="fullpage">
+        <div class="fullpage-inner">
 
-    <style>
-      /* --- CSS DASAR --- */
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        background-color: #0f172a; /* Warna background gelap siber */
-        color: #ffffff;
-      }
+            <div class="center-text">
+                <span class="sub-heading">Technical Capabilities</span>
+                <h2>Security Skill Matrix</h2>
 
-      .fullpage {
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 60px 20px;
-      }
-
-      .section-dark {
-        background-color: #0f172a;
-      }
-
-      .fullpage-inner {
-        max-width: 1100px;
-        width: 100%;
-        margin: 0 auto;
-      }
-
-      /* --- HEADER SECTION --- */
-      .section-header {
-        text-align: center;
-        margin-bottom: 50px;
-      }
-
-      .sub-heading {
-        display: block;
-        font-size: 0.9rem;
-        font-weight: 700;
-        color: #38bdf8; /* Warna biru muda aksen */
-        letter-spacing: 2px;
-        margin-bottom: 10px;
-        text-transform: uppercase;
-      }
-
-      .section-header h2 {
-        font-size: 2.5rem;
-        margin: 0;
-        font-weight: 800;
-      }
-
-      .highlight-text {
-        color: #38bdf8;
-      }
-
-      .header-desc {
-        color: #94a3b8;
-        max-width: 600px;
-        margin: 15px auto 0;
-        line-height: 1.6;
-      }
-
-      /* --- GRID KOMPETENSI --- */
-      .competency-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 25px;
-      }
-
-      /* --- CARD STYLE --- */
-      .competency-card {
-        background: #1e293b;
-        border: 1px solid #334155;
-        border-radius: 16px;
-        padding: 30px;
-        transition: all 0.3s ease;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .competency-card:hover {
-        transform: translateY(-10px);
-        border-color: #38bdf8;
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
-      }
-
-      .card-top {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-      }
-
-      .card-top i {
-        font-size: 2rem;
-        color: #38bdf8;
-        margin-right: 15px;
-      }
-
-      .card-top h3 {
-        margin: 0;
-        font-size: 1.25rem;
-        font-weight: 700;
-      }
-
-      .role-subtitle {
-        color: #38bdf8;
-        font-size: 0.85rem;
-        font-weight: 600;
-        margin-bottom: 15px;
-        text-transform: uppercase;
-      }
-
-      /* --- LIST SKILL --- */
-      .skill-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-
-      .skill-list li {
-        margin-bottom: 12px;
-        font-size: 0.95rem;
-        color: #cbd5e1;
-        display: flex;
-        align-items: flex-start;
-      }
-
-      .skill-list li strong {
-        color: #f8fafc;
-        margin-right: 5px;
-        min-width: 85px;
-        display: inline-block;
-      }
-
-      /* Responsive Mobile */
-      @media (max-width: 768px) {
-        .section-header h2 {
-          font-size: 2rem;
-        }
-        .competency-grid {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <section id="skills" class="fullpage section-dark">
-      <div class="fullpage-inner">
-        <!-- Header -->
-        <div class="section-header">
-          <span class="sub-heading">CORE COMPETENCIES</span>
-          <h2>Technical <span class="highlight-text">Portfolio</span></h2>
-          <p class="header-desc">
-            Pemetaan keahlian dalam operasional keamanan defensif, pemantauan
-            jaringan, dan riset keamanan siber.
-          </p>
-        </div>
-
+                <p class="header-desc">
+                    Kompetensi teknis yang saya pelajari dan terapkan dalam
+                    pengamanan jaringan, sistem, serta analisis keamanan siber.
+                </p>
+            </div>
         <!-- Grid Kompetensi -->
         <div class="competency-grid">
           <!-- Card 1: Defensive Operations -->
@@ -233,3 +80,6 @@
     </section>
   </body>
 </html>
+    </section>
+</main>
+{% endblock %}
